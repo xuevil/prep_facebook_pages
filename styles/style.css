@@ -1,0 +1,36 @@
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+nav {
+	height: 80px;
+	background: #2B78E4;
+	color: #eee;
+}
+nav a {
+	color: #eee;
+	text-decoration: none;
+}
+nav h1 {
+	margin: 0;
+	line-height: 80px;
+	padding-left: 20px;	
+}
+
+.logo {
+	display: inline-block;
+	float: left;
+}
+.top-form {
+	display: inline-block;
+	float: right;
+	width: 700px;
+}
+.log-in input {
+
+}
