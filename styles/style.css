@@ -175,7 +175,7 @@ nav {
 	text-decoration: none;
 	color: #333;
 }
-.top-nav span {
+span {
 	color: #bbb;
 	padding-left: 5px;
 }
@@ -185,12 +185,12 @@ nav {
 	line-height: 60px;
 	padding-right: 15px;
 } 
-.top-edit a {
+.top-edit a,
+.friends-info a {
 	color: #2B78E4;
 }
 
 .main-head {
-	width: 85%;
 	height: 50px;
 	margin: 0 auto;
 	margin-top: 5px;
@@ -214,9 +214,12 @@ nav {
 	padding: 5px 10px;
 }
 
-.about-content {
+.main-container {
 	width: 85%;
 	margin: 0 auto;
+}
+
+.main-content {
 	border: 2px solid #333;
 }
 .col-2-5 {
@@ -230,12 +233,40 @@ nav {
 	margin: 0 auto;
 	padding: 15px;
 }
-.about-content table {
+.main-content table {
 	padding: 25px;
 	line-height: 2;
 }
-.about-content th {
+.main-content th {
 	text-align: left;
 }
 
+/*
+=================================================
+Friends
+=================================================
+*/
+
+.col-1-2 {
+	width: 45%
+}
+
+.friends-info {
+	border: 1px solid #333;
+	margin: 20px;
+}
+.friends-info img {
+	width: 60px;
+	height: 80px;
+	margin: 10px;
+	vertical-align: middle;
+}
+.friends-info div {
+	display: inline-block;
+	margin: 10px;
+}
+.friends-info input {
+	margin: 10px;
+	background: #ccc;
+}
 
