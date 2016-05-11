@@ -32,7 +32,7 @@ input::-moz-focus-inner {
 body {
 	min-width: 640px;
 	margin: 0;
-	font: 14px/24px sans-serif;
+	font: 14px/24px Arial,Helvetica,sans-serif;
 	letter-spacing:.5px;
 	color: #333;
 }
@@ -121,11 +121,10 @@ label input {
 
 .col-2-3 {
 	width: 66.66%;
-	font-weight: 600;
 }
 .col-2-3 section {
 	width: 500px;
-	margin: 70px auto;
+	margin: 60px auto;
 }
 .col-2-3 li {
 	font-weight: 500;
@@ -138,7 +137,7 @@ label input {
 }
 .col-1-3 h1,
 .col-1-3 h4 {
-	font-weight: 600;
+	font-weight: 500;
 }
 .col-1-3 h4 {
 	margin: 0;
@@ -238,16 +237,20 @@ About
 }
 
 .top-background {
-	width: 85%;
-	margin: 0 auto;
+	display: relative;
 }
 .top-image {
 	width: 100%;
 	height: 300px;
-	border: 1px solid #666;
+	border: 2px solid #666;
+	background: #eee;
 }
 
-
+.user-position {
+	position: absolute;
+	top: 260px;
+	left: 150px;
+}
 .user-image img {
 	width: 100px;
 	height: 125px;
@@ -258,27 +261,32 @@ About
 	padding-left: 10px;
 }
 .top-nav {
-	height: 60px;
+	height: 50px;
+	line-height: 50px;
 	border: 2px solid #333;
 }
 .top-nav ul {
 	display: inline-block;
 	padding-left: 200px;
-	line-height: 60px;
 	margin: 0;
 }
 .top-nav li:first-child {
-	border-left: 1px solid #333;
+	border-left: 2px solid #333;
+	border-right: none;
 }
 
 .top-nav li {
 	display: inline-block;
-	border-right: 1px solid #333;
+	border-right: 2px solid #333;
 	padding: 0 10px;
 }
 .top-nav li a {
 	text-decoration: none;
 	color: #333;
+}
+.nav-focus {
+	border-left: 2px solid #333;
+	background: #eee;
 }
 span {
 	color: #bbb;
@@ -287,7 +295,6 @@ span {
 .top-edit {
 	display: inline-block;
 	float: right;
-	line-height: 60px;
 	padding-right: 15px;
 }
 .top-edit a,
@@ -298,25 +305,28 @@ span {
 .main-head {
 	height: 50px;
 	margin: 0 auto;
-	margin-top: 5px;
+	margin-top: 10px;
 	background: #eee;
 	border: 2px solid #333;
 	border-bottom: none;
 }
-.main-head h3 {
+.main-head h2 {
 	display: inline-block;
-	width: 80%;
 	margin: 0;
+	padding-left: 45%;
 	line-height: 50px;
 	text-align: center;
 }
 .main-head input {
 	float: right;
-	margin-top: 5px;
+	margin-top: 9px;
+	margin-right: 10px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 2px;
 	background: #307EE0;
 	color: #eee;
 	font-size: 13px;
-	padding: 5px 10px;
 }
 
 .main-container {
@@ -326,21 +336,15 @@ span {
 
 .main-content {
 	border: 2px solid #333;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 }
-.col-2-5 {
-	width: 30%;
+.content-empty {
+	padding-bottom: 60px;
+}
+.col-1-3 table {
+	width: 330px;
 	margin: 0 auto;
-	padding-left: 25px;
-}
-.col-3-5 {
-	float: right;
-	width: 50%;
-	margin: 0 auto;
-	padding: 15px;
-}
-.main-content table {
-	padding: 25px;
+	padding-top: 20px;
 	line-height: 2;
 }
 .main-content th {
@@ -354,29 +358,36 @@ Friends
 */
 
 .col-1-2 {
-	width: 49%
+	width: 50%;
+	padding-bottom: 10px;
 }
 
 .friends-info {
-	border: 1px solid #333;
+	border: 2px solid #333;
 	margin: 20px;
+	display: flex;
+	align-items: center;
+}
+.left-empty .friends-info {
+	margin-right: 10px;
+}
+.right-empty .friends-info {
+	margin-left: 10px;
 }
 .friends-info img {
-	width: 60px;
-	height: 80px;
+	height: 100px;
 	margin: 10px;
-	margin-left: 50px;
-	vertical-align: middle;
+	margin-left: 20%;
 }
 .friends-info div {
-	display: inline-block;
-	margin: 20px;
+	margin: 10px;
 }
 .friends-info input {
-	margin: 20px;
-	margin-left: 30px;
+	margin-left: 20px;
 	padding: 3px 10px;
-	background: #ccc;
+	background: #ddd;
+	border: none;
+	border-radius: 2px;
 }
 
 /*
@@ -387,10 +398,13 @@ Newsfeed
 
 .feed-container {
 	width: 100%;
+	margin: 0;
 }
 .col-1-4 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 25%;
-	height: 100%;
 	vertical-align: top;
 }
 .row-space {
@@ -398,7 +412,7 @@ Newsfeed
 	margin: 20px auto;
 }
 .col-1-4 .user-image {
-	width: 70%;
+	width: 290px;
 	margin: 0 auto;
 }
 .col-1-4 .user-name {
@@ -416,7 +430,6 @@ Newsfeed
 	margin: 20px auto;
 }
 .post-info {
-	font-size: 14px;
 	margin-left: 10%;
 	margin-top: 10px;
 }
@@ -429,6 +442,9 @@ Newsfeed
 }
 
 .col-3-4 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 75%;
 	border-left: 2px solid #333;
 }
