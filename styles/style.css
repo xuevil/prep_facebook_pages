@@ -236,6 +236,11 @@ About
 	line-height: 50px;
 }
 
+.top-background,
+.top-image,
+.top-nav {
+	box-sizing: border-box;
+}
 .top-background {
 	display: relative;
 }
@@ -264,21 +269,27 @@ About
 	height: 50px;
 	line-height: 50px;
 	border: 2px solid #333;
+	border-top: none;
 }
 .top-nav ul {
 	display: inline-block;
 	padding-left: 200px;
 	margin: 0;
 }
-.top-nav li:first-child {
-	border-left: 2px solid #333;
-	border-right: none;
-}
-
 .top-nav li {
 	display: inline-block;
 	border-right: 2px solid #333;
 	padding: 0 10px;
+}
+.top-nav .li-one {
+	border-left: 2px solid #333;
+	border-right: none;
+}
+.top-nav .fix-li {
+	border-left: 2px solid #333;
+}
+.top-nav .li-three {
+	border-right: none;
 }
 .top-nav li a {
 	text-decoration: none;
@@ -400,16 +411,16 @@ Newsfeed
 	width: 100%;
 	margin: 0;
 }
+.feed-container a {
+	color: #1765bc;
+}
 .col-1-4 {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 25%;
-	vertical-align: top;
 }
 .row-space {
 	width: 90%;
-	margin: 20px auto;
+	margin: 40px auto;
 }
 .col-1-4 .user-image {
 	width: 290px;
@@ -420,14 +431,10 @@ Newsfeed
 	width: 60%;
 	padding-left: 10px;
 }
-.post a,
-.user-name a {
-	color: #1765bc;
-}
 
 .rencently-active {
 	width: 90%;
-	margin: 20px auto;
+	margin: 10px auto;
 }
 .post-info {
 	margin-left: 10%;
@@ -442,8 +449,6 @@ Newsfeed
 }
 
 .col-3-4 {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 75%;
 	border-left: 2px solid #333;
@@ -535,5 +540,3 @@ Newsfeed
 	margin-left: 85%;
 	font-size: 12px;
 }
-
-
