@@ -340,7 +340,8 @@ span {
 	text-align: right;
 }
 .top-edit a,
-.friends-info a {
+.friends-info a,
+.feed-container a {
 	color: #2B78E4;
 }
 
@@ -442,8 +443,8 @@ Newsfeed
 	width: 100%;
 	margin: 0;
 }
-.feed-container a {
-	color: #1765bc;
+.feed-container span {
+	padding-left: 0;
 }
 .col-1-4 {
 	box-sizing: border-box;
@@ -457,7 +458,7 @@ Newsfeed
 	width: 290px;
 	margin: 0 auto;
 }
-.col-1-4 .user-name {
+.user-name {
 	display: inline-block;
 	width: 60%;
 	padding-left: 10px;
@@ -468,8 +469,9 @@ Newsfeed
 	margin: 10px auto;
 }
 .post-info {
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-top: 10px;
+	font-size: 12px;
 }
 .comment-head img,
 .post-head img,
@@ -496,12 +498,12 @@ Newsfeed
 	padding: 5px;
 	border-bottom: 2px solid #333;
 }
-.write-post textarea {
+textarea {
 	width: 95%;
-	margin-left: 2.5%;
-	border: 2px solid #333;
-	margin-bottom: 20px;
+    display: block;
+	margin: 0 auto;
 	padding: 10px;
+	border: 2px solid #333;
 }
 .write-post div {
 	border-top: 2px solid #333;
@@ -515,7 +517,6 @@ Newsfeed
 	padding: 4px 14px;
 	background: #2F7BE8;
 	color: #eee;
-	font-size: 14px;
 }
 
 .post {
@@ -534,40 +535,46 @@ Newsfeed
 .post-head {
 	padding: 10px;
 }
-.post-head div {
-	display: inline-block;
-	font-size: 14px;
-}
 .comment {
-	padding: 10px;
 	background: #eee;
+	padding: 10px;
 	border-top: 2px solid #333;
 }
 .comment p {
-	padding: 0;
-	padding-top: 10px;
+	padding: 5px;
+	padding-left: 0;
 }
 .delete-btn {
 	float: right;
 }
 .comment-content {
 	padding: 10px 0;
+	border-top: 1px solid #444;
 }
-.comment-content p {
-	padding-bottom: 10px;
-}
-.write-comment textarea {
-	width: 100%;
-	border: 2px solid #333;
-	margin-top: 20px;
+.comment-head {
 	padding: 10px;
 }
-.write-comment .left-a {
-	margin-top: 5px;
-	float: left;
+.comment-head img {
+	vertical-align: top;
+}
+.comment-head div {
+	display: inline-block;
+	width:90%;
+	padding-left: 5px;
+}
+.write-comment textarea {
+	margin-top: 20px;
+}
+.write-comment div{
+	display: table;
+	width: 100%;
+}
+.write-comment a {
+	display: table-cell;
+	padding-left: 3%;
 }
 .write-comment input {
-	margin-top: 5px;
-	margin-left: 85%;
+	display: table-cell;
 	font-size: 12px;
+	margin-left: 85%;
 }
