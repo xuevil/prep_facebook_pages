@@ -255,7 +255,8 @@ About
 .top-image {
 	width: 100%;
 	height: 300px;
-	border: 2px solid #666;
+	border: 2px solid #333;
+	border-bottom: none;
 	background: #eee;
 }
 
@@ -314,11 +315,9 @@ About
 
 .top-nav {
 	display: table;
-	border-collapse: collapse;
 	width: 100%;
 	line-height: 50px;
 	border: 2px solid #333;
-	border-top: none;
 }
 .top-nav ul {
 	padding-left: 200px;
@@ -326,10 +325,11 @@ About
 }
 .top-nav li {
 	display: table-cell;
-	border: 2px solid #333;
-	border-top: none;
-	border-bottom: none;
+	border-right: 2px solid #333;
 	padding: 0 10px;
+}
+.top-nav li:first-child {
+	border-left: 2px solid #333;
 }
 .top-nav li a {
 	text-decoration: none;
@@ -339,8 +339,9 @@ About
 	background: #eee;
 }
 span {
-	color: #bbb;
+	color: #999;
 	padding-left: 5px;
+	font-style: 12px;
 }
 
 .top-edit {
